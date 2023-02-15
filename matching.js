@@ -21,10 +21,14 @@ function matching(){
     const matchPin = marchingPin.value
     const genartePin = document.getElementById('pinDisplay')
     const genPin = genartePin.value
+    const notification = document.getElementById('noti')
     if(genPin === matchPin){
+        
+        notification.innerText = 'Hey i love you its match'
         console.log('match');
     }else{
-        console.log('invalid');
+        notification.innerText = 'Hey i hate you its not match'
+        
     }
 }
 
